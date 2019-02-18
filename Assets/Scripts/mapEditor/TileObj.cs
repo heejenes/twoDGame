@@ -6,13 +6,16 @@ public class TileObj {
 
 	public GameObject tileId;
 	public GameObject curTileInstance;
-	public int walkSpeed;
+	public GameObject entityId;
+	public GameObject curEntityInstance;
+	//public int walkSpeed;
 	public bool tileCol;
 
-	public TileObj(GameObject _tileId, int _walkSpeed, bool _tileCol){
+	public TileObj(GameObject _tileId, /*int _walkSpeed,*/ bool _tileCol, GameObject _entityId = null){
 		tileId = _tileId;
-		walkSpeed = _walkSpeed;
+		//walkSpeed = _walkSpeed;
 		tileCol = _tileCol;
+		entityId = _entityId;
 		//updateTile();
 	}
 
